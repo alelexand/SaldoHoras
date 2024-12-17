@@ -17,7 +17,7 @@ class Romeu:
         self.user = getpass.getuser()
         self.url = "https://app.tangerino.com.br/"
         self.source = rf"C:\Users\{self.user}\Downloads/"
-        self.destination = fr"T:\DEPARTAMENTOS\AUTOMAÇÃO\PROJETOS\Robo_saldo_de_horas/"
+        self.destination = fr"CaminhoDeDestino"
         self.datafp = datetime.date.today()
         self.datafa = datetime.date.today()
         mesantes = self.datafp.replace(day=1)

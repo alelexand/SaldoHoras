@@ -4,9 +4,9 @@ import sqlite3
 
 class Consulta:
     def __init__(self):
-        self.banco = sqlite3.connect(fr"T:\DEPARTAMENTOS\AUTOMAÇÃO\DATABASES\Robô_folha\dbfolha\DB_folha.db")
+        self.banco = sqlite3.connect(fr"CaminhoBancoDeDados")
         self.cursor = self.banco.cursor()
-        self.wb = openpyxl.load_workbook(fr'T:\DEPARTAMENTOS\AUTOMAÇÃO\PROJETOS\Robo_saldo_de_horas\RelatorioBancoHoras.xlsx')
+        self.wb = openpyxl.load_workbook(fr'CaminhoExcelFormatadoParaReceberOsDados')
         self.ws = self.wb.active
         self.lista_nomes_db = []
         self.lista_final = []

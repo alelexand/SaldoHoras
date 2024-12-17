@@ -6,7 +6,7 @@ class Banco:
     def __init__(self):
         print("INICIANDO COLETA DE DADOS NA PLANILHA")
         print("INSERINDO OS DADOS NO BANCO DE DADOS")
-        self.banco = sqlite3.connect(fr"T:\DEPARTAMENTOS\AUTOMAÇÃO\DATABASES\Robô_folha\dbfolha\DB_folha.db")
+        self.banco = sqlite3.connect(fr"CaminhoDoArquivoOuBancoDeDados")
         self.cursor = self.banco.cursor()
 
     def horas(self):
