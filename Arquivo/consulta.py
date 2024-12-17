@@ -24,7 +24,7 @@ class Consulta:
             nome_pessoa = self.ws[f'A{row}'].value
 
             if nome_pessoa in self.lista_nomes_db:
-                # print(nome_pessoa + f' LINHA: {row}')
+                
 
                 for linha in range(row, self.ws.max_row + 1):
                     nome_saldo = self.ws[f'H{linha}'].value
